@@ -4,7 +4,7 @@ class Student:
     def __init__(self, name, level, courses = None):
         self.name = name
         self.level = level
-        if courses is None:
+        if not courses:
             courses = []
         self.courses = courses
 
